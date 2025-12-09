@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AURA – Energi som känns</title>
+
+    <!-- TYPSNITT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="AURA logotyp">
+        </a>
+
+        <nav>
+            <a href="products.html">Produkter</a>
+            <a href="index.html">Nyheter</a>
+            <a href="#">Hållbarhet</a>
+            <a href="#">Om oss</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>AURA – energi som känns, inte bara dricks</h1>
+                <p class="subtitle">Vi erbjuder tre koffeinfria drycker: Mind, Body och Soul som alla är sockerfria,
+                    veganska och
+                    fyllda med bra vitaminer. Dryckerna är fräscha och ger samma energigivande effekt som
+                    energidrycker, men utan riskerna från koffein och tillsatser</p>
+                <a href="#" class="cta-button">Upptäck AURA</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero_image.webp" alt="AURA produkt">
+            </div>
+        </div>
+    </section>
+
+    <nav id="products">
+        <ul>
+            <li><a class="product-btn mind" href="#mind">Mind</a></li>
+            <li><a class="product-btn body" href="#body">Body</a></li>
+            <li><a class="product-btn soul" href="#soul">Soul</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="drink-container">
+            <div class="mind-section">
+                <section id="mind">
+                    <h2>Mind</h2>
+                    <figure>
+                        <a href="#popup-mind">
+                            <img src="images/Mind.webp" alt="Drycken Mind med smak av hallon/blåbär" class="drink-image"
+                                width="700" height="400">
+                        </a>
+                        <figcaption>
+                            <p>En lätt och fräsch bärdryck.</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+
+            <div class="body-section">
+                <section id="body">
+                    <h2>Body</h2>
+                    <figure>
+                        <a href="#popup-body">
+                            <img src="images/Body.webp" alt="Drycken Body med smak av citrus" class="drink-image"
+                                width="700" height="400">
+                        </a>
+                        <figcaption>
+                            <p>En ren citrussmak av citron och apelsin.</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+
+            <div class="soul-section">
+                <section id="soul">
+                    <h2>Soul</h2>
+                    <figure>
+                        <a href="#popup-soul">
+                            <img src="images/Soul.webp" alt="Drycken Soul med smak av persika" class="drink-image"
+                                width="700" height="400">
+                        </a>
+                        <figcaption>
+                            <p>En mjuk smak av persika</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="images/logo.png" alt="AURA logotyp">
+                </div>
+                <p class="tagline">AURA – energi som känns, inte bara dricks</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Produkter</h4>
+                    <a href="#">Mind</a>
+                    <a href="#">Body</a>
+                    <a href="#">Soul</a>
+                    <a href="#">Alla produkter</a>
+                </div>
+                <div class="link-column">
+                    <h4>Företaget</h4>
+                    <a href="#">Om oss</a>
+                    <a href="#">Hållbarhet</a>
+                    <a href="#">Nyheter</a>
+                    <a href="#">Kontakt</a>
+                </div>
+                <div class="link-column">
+                    <h4>Support</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Leverans</a>
+                    <a href="#">Returer</a>
+                    <a href="#">Villkor</a>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Prenumerera på nyhetsbrev</h4>
+                <p>Få exklusiva erbjudanden och nyheter direkt till din inkorg.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Din e-postadress">
+                    <button type="submit">→</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">TikTok</a>
+                <a href="#" class="social-icon">Facebook</a>
+            </div>
+
+            <div class="footer-info">
+                <p>© 2025 AURA Drinks. Alla rättigheter förbehållna.</p>
+                <p>kontakt@auradrinks.se</p>
+                <div class="legal-links">
+                    <a href="#">Integritetspolicy</a>
+                    <a href="#">Användarvillkor</a>
+                    <a href="#">Cookie-inställningar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP – MIND -->
+    <div id="popup-mind" class="product-popup">
+        <a href="#!" class="popup-overlay-link"></a>
+        <div class="popup-content mind-popup">
+            <h2>Mind</h2>
+            <img src="images/Mind.webp" alt="Mind dryck">
+            <p>Mind har en bärsmak med kombinationen av blåbär och hallon. Mind är till för dig som vill
+                hålla huvudet klart och känna dig fokuserad. Den innehåller vitaminer som hjälper
+                hjärnan
+                att fungera som den ska. Smaken är lätt och fräsch.<br> <b>Ingridienser:</b> Kolsyrat
+                vatten,
+                blåbärsjuicekoncentrat, hallonjuicekoncentrat, naturliga aromer från
+                blåbär
+                och hallon, frukt- och grönsaksutdrag (B5, B6, B12), rotextrakt,
+                naturligt citrusextrakt.<br>
+                <b>Funktion:</b> Stödjer hjärnans normala funktion och fokus utan koffein.
+            </p>
+            <button class="add-to-cart">Lägg i varukorg - 22kr</button>
+        </div>
+    </div>
+
+    <!-- POPUP – BODY -->
+    <div id="popup-body" class="product-popup">
+        <a href="#!" class="popup-overlay-link"></a>
+        <div class="popup-content body-popup">
+            <h2>Body</h2>
+            <img src="images/Body.webp" alt="Body dryck">
+            <p>Body har en ren citrussmak och passar perfekt när du behöver ett litet plus i vardagen,
+                kanske före träning eller när du ska ladda om. Vitaminerna är valda för att ge kroppen
+                energi
+                på ett naturligt sätt. Smaken är balanserad och fungerar lika bra när du är aktiv som
+                när du
+                bara vill ta det lugnt.<br> <b>Ingredienser:</b>
+                Kolsyrat vatten, apelsinjuicekoncentrat, citronjuicekoncentrat, naturliga aromer från
+                citrus,
+                frukt- och grönsaksutdrag (C, B3, B6), ginsengextrakt, rotextrakt.<br>
+                <b>Funktion:</b> Stödjer kroppens normala energimetabolism och ger en lätt energiboost utan koffein.
+            </p>
+            <button class="add-to-cart">Lägg i varukorg - 22kr</button>
+
+        </div>
+    </div>
+
+    <!-- POPUP – SOUL -->
+    <div id="popup-soul" class="product-popup">
+        <a href="#!" class="popup-overlay-link"></a>
+        <div class="popup-content soul-popup">
+            <h2>Soul</h2>
+            <img src="images/Soul.webp" alt="Soul dryck">
+            <p>Soul har en mjuk persikosmak och handlar om välmående och stadig energi. Den innehåller
+                vitaminer som motverkar trötthet och ger dig ett lugn. Smaken är mjuk och rund, precis
+                lagom när du vill ha något uppfriskande som också får dig att slappna av. <br>
+                <b>Ingredienser:</b>Kolsyrat vatten, persikjuicekoncentrat, naturliga aromer från
+                persika,
+                frukt- och
+                grönsaksutdrag (B6, B12, folsyra), rhodiolaextrakt (adaptogen som motverkar trötthet och
+                främjar välmående), naturligt citrusextrakt. <br>
+                <b>Funktion:</b> Bidrar till stabil energi, minskar trötthet och ger ett lugnt välbefinnande utan
+                koffein.
+
+            </p>
+            <button class="add-to-cart">Lägg i varukorg - 22kr</button>
+        </div>
+    </div>
+</body>
+
+</html>
