@@ -916,3 +916,318 @@ body {
     justify-content: center;
   }
 }
+
+/* Eriks del om produkter*/
+#products {
+  align-items: center;
+  justify-content: center;
+  padding: 10px 80px;
+  position: sticky;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  backdrop-filter: blur(10px);
+  background: var(--svart);
+}
+
+#products ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#products ul li a {
+  display: block;
+  color: var(--vit);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#products nav {
+  display: flex;
+  gap: 40px;
+}
+
+#products a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s;
+  position: relative;
+}
+
+#products a.mind:hover {
+  color: var(--mind-1);
+}
+
+#products a.body:hover {
+  color: var(--body-1);
+}
+
+#products a.soul:hover {
+  color: var(--soul-1);
+}
+
+#products a.mind::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--mind-1);
+  transition: width 0.3s;
+}
+
+#products a.body::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--body-1);
+  transition: width 0.3s;
+}
+
+#products a.soul::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--soul-1);
+  transition: width 0.3s;
+}
+
+#products a.mind:hover::after {
+  width: 100%;
+}
+
+#products a.body:hover::after {
+  width: 100%;
+}
+
+#products a.soul:hover::after {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.drink-container {
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  background: var(--bakgrund);
+}
+
+.mind-section {
+  padding: 80px;
+  border-radius: 80px;
+  background: linear-gradient(
+    135deg,
+    var(--mind-1) 0%,
+    var(--mind-2) 30%,
+    var(--mind-3) 60%,
+    var(--mind-4) 100%
+  );
+  backdrop-filter: blur(4px);
+  box-shadow: 0 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.body-section {
+  padding: 80px;
+  border-radius: 80px;
+  background: linear-gradient(
+    135deg,
+    var(--body-1) 0%,
+    var(--body-2) 30%,
+    var(--body-3) 60%,
+    var(--body-4) 100%
+  );
+  backdrop-filter: blur(4px);
+  box-shadow: 0 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.soul-section {
+  padding: 80px;
+  border-radius: 80px;
+  background: linear-gradient(
+    135deg,
+    var(--soul-1) 0%,
+    var(--soul-2) 30%,
+    var(--soul-3) 60%,
+    var(--soul-4) 100%
+  );
+  backdrop-filter: blur(4px);
+  box-shadow: 0 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mind-section h2 {
+  text-align: center;
+  color: var(--vit);
+}
+
+.body-section h2 {
+  text-align: center;
+  color: var(--vit);
+}
+
+.soul-section h2 {
+  text-align: center;
+  color: var(--vit);
+}
+
+figure {
+  text-align: left;
+  position: relative;
+  justify-content: center;
+  display: inline-block;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+figure img {
+  display: block;
+  width: 80%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  pointer-events: auto;
+  margin: 0 auto;
+}
+
+.product-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  z-index: 9999;
+}
+
+.product-popup:target {
+  display: flex;
+}
+
+.popup-content {
+  background: var(--bakgrund);
+  padding: 40px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.popup-content img {
+  max-width: 75%;
+  border-radius: 16px;
+  margin: 20px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mind-popup {
+  border: 3px solid var(--mind-1);
+}
+.body-popup {
+  border: 3px solid var(--body-1);
+}
+.soul-popup {
+  border: 3px solid var(--soul-1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.drink-image {
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.drink-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.add-to-cart {
+  margin-top: 20px;
+  padding: 16px 32px;
+  background: var(--svart);
+  color: var(--vit);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.add-to-cart:hover {
+  background: var(--mind-1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+.popup-overlay-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.popup-content {
+  position: relative;
+  z-index: 2;
+}
+
+figcaption {
+  text-align: center;
+  padding: 20px;
+  color: var(--vit);
+  text-shadow: var(--svart);
+}
+
+#mind,
+#body,
+#soul {
+  scroll-margin-top: 270px;
+}
