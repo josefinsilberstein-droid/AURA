@@ -29,7 +29,7 @@
   --text-ljus: #666666;
 }
 
-/* Josefins del - Nyheter/Startsida, navbar och footer ദ്ദി(ᵔ ᗜ ᵔ) */
+/* Josefins del - Nyheter/Startsida, hero, navbar och footer ദ്ദി(ᵔ ᗜ ᵔ) */
 * {
   margin: 0;
   padding: 0;
@@ -268,7 +268,7 @@ body {
   align-items: center;
 }
 
-/* Klass för att vända på layouten (bild på vänster sida) */
+/* Klass för att vända så att bilden är på vänster sida */
 .news-article.reverse .article-container {
   grid-template-columns: 1fr 2fr;
 }
@@ -500,7 +500,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* INGEN HOVER-EFFEKT */
 }
 
 .social-overlay {
@@ -519,7 +518,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* FOOTER - MODERN MED FÄRGER */
+/* FOOTER */
 .footer {
   background: var(--svart);
   color: var(--vit);
@@ -584,7 +583,6 @@ body {
   margin-bottom: 14px;
   font-size: 16px;
   transition: color 0.3s ease;
-  /* Ta bort position: relative, padding-left och ::before */
 }
 
 .link-column a:hover {
