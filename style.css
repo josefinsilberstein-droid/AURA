@@ -1259,10 +1259,7 @@ figcaption {
 }
 /* Slut på Eriks del */
 
-/* ============================
-   Nowaras CSS – Om Oss
-   Gäller bara <body class="om-oss-page">
-   ============================ */
+
 
 
 /* Alice CSS */
@@ -1351,3 +1348,122 @@ width: 50em;
 }
 
     
+/* ============================
+   Nowaras CSS – Om Oss
+   ============================ */
+   
+.om-oss-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 80px 100px;
+}
+
+/* Avstånd mellan sektionerna i Om oss */
+
+.om-oss-main section {
+    margin-bottom: 40px;
+}
+
+/* Rubriker med liten gradient-linje under */
+
+.om-oss-main section h2 {
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.om-oss-main section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 170px;
+    height: 2px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #DCCEF2, #ffffff);
+}
+
+/* Tagline i introt – utan linje under */
+
+.om-oss-main .intro {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.om-oss-main .intro .tagline {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.om-oss-main .intro .tagline::after {
+    display: none;
+}
+
+.om-oss-main .intro .tagline span {
+    display: block;
+    margin-top: 4px;
+    font-size: 1rem;
+    color: #9076bb;
+}
+
+/* Brödtext i sektionerna */
+
+.om-oss-main .story p,
+.om-oss-main .purpose p,
+.om-oss-main .vision p,
+.om-oss-main .philosophy p,
+.om-oss-main .community p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Listor – utan bullets, med lila vertikal linje till vänster */
+
+.om-oss-main .products ul,
+.om-oss-main .philosophy ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.om-oss-main .products li,
+.om-oss-main .philosophy li {
+    position: relative;
+    padding: 8px 0 8px 20px;
+    margin-bottom: 12px;
+}
+
+.om-oss-main .products li::before,
+.om-oss-main .philosophy li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 3px;
+    height: 15px;
+    background: #DCCEF2;
+    border-radius: 2px;
+}
+
+/* Community-highlight längst ner */
+
+.om-oss-main .community .highlight {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #bca8dd;
+    text-align: center;
+    margin: 35px auto 0;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.hero-om-oss {
+    background: radial-gradient(circle at 0% 0%, #e0c9ff 0, transparent 40%),
+                radial-gradient(circle at 100% 0%, #ffd3c4 0, transparent 40%),
+                radial-gradient(circle at 0% 100%, #c1ddff 0, transparent 40%),
+                radial-gradient(circle at 100% 100%, #ffe5a5 0, transparent 40%),
+                linear-gradient(135deg, #e3d4ff, #cde6ff);
+}
+
