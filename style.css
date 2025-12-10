@@ -1263,59 +1263,7 @@ figcaption {
    Nowaras CSS – Om Oss
    Gäller bara <body class="om-oss-page">
    ============================ */
-/* Remove underline from first tagline */
-.tagline::after {
-    display: none !important;
-}
 
-.tagline {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.tagline span {
-    display: block;
-    margin-top: 4px;
-    font-size: 1rem;
-    color:#bca8dd;
-}
-
-/* LISTS */
-.products ul,
-.philosophy ul {
-    list-style: none;
-}
-
-.products li,
-.philosophy li {
-    position: relative;
-    padding: 8px 0 8px 20px;
-    margin-bottom: 12px;
-}
-
-.products li::before,
-.philosophy li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 13px;
-    width: 3px;
-    height: 15px;
-    background: #DCCEF2;
-    border-radius: 2px;
-}
-
-/* COMMUNITY HIGHLIGHT */
-.community .highlight {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: #bca8dd;
-    text-align: center;
-    margin: 35px auto 0;
-    max-width: 600px;
-    line-height: 1.5;
-}
 
 /* Alice CSS */
 
