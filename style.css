@@ -1732,30 +1732,3 @@ section h2::after {
     max-width: 600px;
     line-height: 1.5;
 }
-
-/* FOOTER */
-.sub-footer {
-    margin-top: 60px;
-    padding: 30px 20px;
-    text-align: center;
-    background: #ffffff;
-    border-top: 1px solid rgba(0,0,0,0.06);
-    color: #777;
-    font-size: 0.9rem;
-}
-
-.sub-footer-links {
-    margin-top: 10px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.sub-footer-links a {
-    color: #7c6ad9;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-
-
