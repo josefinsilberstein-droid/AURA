@@ -1391,7 +1391,7 @@ width: 50em;
 }
 
 .om-oss-main .intro .tagline {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -1402,7 +1402,7 @@ width: 50em;
 .om-oss-main .intro .tagline span {
     display: block;
     margin-top: 4px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #9076bb;
 }
 
@@ -1459,11 +1459,30 @@ width: 50em;
     line-height: 1.5;
 }
 
-.hero-om-oss {
+/* HERO speciellt för Om oss (Fixat) */
+.hero.hero-om-oss {
     background: radial-gradient(circle at 0% 0%, #e0c9ff 0, transparent 40%),
                 radial-gradient(circle at 100% 0%, #ffd3c4 0, transparent 40%),
                 radial-gradient(circle at 0% 100%, #c1ddff 0, transparent 40%),
                 radial-gradient(circle at 100% 100%, #ffe5a5 0, transparent 40%),
                 linear-gradient(135deg, #e3d4ff, #cde6ff);
+
+    /* DEN VIKTIGA FIXEN */
+    padding-top: 100px !important;   /* Förut 160px → gjorde att hela hero gled ner */
+    padding-bottom: 120px !important;
+    margin-top: 0 !important;        /* Removes weird gap above hero */
 }
+
+/* Fix: ge plats för fast navbar */
+body {
+    padding-top: 100px;
+}
+
+/* Större titel för Om oss hero */
+.hero-om-oss h1 {
+    font-size: 64px !important; 
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
 
