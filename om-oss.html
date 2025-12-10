@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Oss – AURA</title>
+  <meta charset="UTF-8">
+  <title>AURA – Energi som känns</title>
 
-    <!-- Inter font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <!-- TYPSNITT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="om-oss-page">
+<!-- NAVIGATION -->
+<header class="navbar">
+  <a href="nyheter.html" class="logo">
+    <img src="images/logo.png" alt="AURA logotyp">
+  </a>
 
-<!-- NAVBAR -->
-<header class="sub-navbar">
-    <a href="nyheter.html" class="sub-logo">
-        <img src="LOGGA-svart.png" alt="AURA logotyp">
-    </a>
-
-    <nav>
-        <a href="nyheter.html">Hem</a>
-        <a href="produkter.html">Produkter</a>
-        <a href="om-oss.html" class="active">Om oss</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
+  <nav>
+    <a href="products.html">Produkter</a>
+    <a href="nyheter.html">Nyheter</a>
+    <a href="sustainability.html">Hållbarhet</a>
+    <a href="om-oss.html">Om oss</a>
+  </nav>
 </header>
 
+<!-- HERO -->
 <main>
-
-    <!-- HERO -->
-    <section class="om-hero">
-        <h1 class="hero-title">Om Oss</h1>
-    </section>
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+        <!-- ändra text här till det du tycker passar in på om-oss */-->
+      <h1>AURA – energi som känns, inte bara dricks</h1>
+      <p class="subtitle">koffeinfri. vegansk. hälsosam.</p>
+    <a href="#om-oss.html" class="cta-button">Upptäck AURA</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero_image.webp" alt="AURA produkt">
+    </div>
+  </div>
+</section>
 
     <!-- INTRO -->
     <section class="intro">
@@ -91,15 +99,67 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="sub-footer">
-    <p>© 2025 AURA Drinks</p>
-    <div class="sub-footer-links">
-        <a href="#">Integritetspolicy</a>
-        <a href="#">Villkor</a>
-        <a href="#">Kontakt</a>
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="images/logo.png" alt="AURA logotyp">
+      </div>
+      <p class="tagline">AURA – energi som känns, inte bara dricks</p>
     </div>
+    
+    <div class="footer-links">
+      <div class="link-column">
+        <h4>Produkter</h4>
+        <a href="#">Mind</a>
+        <a href="#">Body</a>
+        <a href="#">Soul</a>
+        <a href="#">Alla produkter</a>
+      </div>
+      <div class="link-column">
+        <h4>Företaget</h4>
+        <a href="#">Om oss</a>
+        <a href="#">Hållbarhet</a>
+        <a href="#">Nyheter</a>
+        <a href="#">Kontakt</a>
+      </div>
+      <div class="link-column">
+        <h4>Support</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Leverans</a>
+        <a href="#">Returer</a>
+        <a href="#">Villkor</a>
+      </div>
+    </div>
+    
+    <div class="footer-newsletter">
+      <h4>Prenumerera på nyhetsbrev</h4>
+      <p>Få exklusiva erbjudanden och nyheter direkt till din inkorg.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Din e-postadress">
+        <button type="submit">→</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="#" class="social-icon">TikTok</a>
+      <a href="#" class="social-icon">Facebook</a>
+    </div>
+    
+    <div class="footer-info">
+      <p>© 2025 AURA Drinks. Alla rättigheter förbehållna.</p>
+      <p>kontakt@auradrinks.se</p>
+      <div class="legal-links">
+        <a href="#">Integritetspolicy</a>
+        <a href="#">Användarvillkor</a>
+        <a href="#">Cookie-inställningar</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 </body>
 </html>
-
