@@ -29,6 +29,7 @@
   --text-ljus: #666666;
 }
 
+/* Josefins del - Nyheter/Startsida ദ്ദി(ᵔ ᗜ ᵔ) */
 * {
   margin: 0;
   padding: 0;
@@ -105,9 +106,9 @@ body {
   background: linear-gradient(
     135deg,
     var(--pastell-lila) 0%,
-    rgba(99, 172, 255, 0.3) 30%,  /* mind-3 */
-    rgba(255, 190, 155, 0.2) 60%, /* body-3 */
-    rgba(255, 227, 74, 0.15) 100% /* soul-1 */
+    rgba(99, 172, 255, 0.3) 30%,
+    rgba(255, 190, 155, 0.2) 60%,
+    rgba(255, 227, 74, 0.15) 100%
   );
   min-height: 80vh;
   display: flex;
@@ -198,7 +199,7 @@ body {
   height: 500px;
   border-radius: 50%;
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
-  object-fit: cover; /* Ser till att bilden fyller cirkeln utan att töjas */
+  object-fit: cover;
   object-position: center;
 }
 
