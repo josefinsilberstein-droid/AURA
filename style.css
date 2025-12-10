@@ -1681,55 +1681,60 @@ section h2::after {
    Gäller bara <body class="om-oss-page">
    ============================ */
 
-/* Endast Om-oss-sidan */
-body.om-oss-page * {
+/* FONT */
+@font-face {
+    font-family: 'fashionableregular';
+    src: url('../fonts/fashionable-webfont.woff2') format('woff2'),
+         url('../fonts/fashionable-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RESET */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
-body.om-oss-page {
+body {
     font-family: 'Inter', sans-serif;
     background: #fafafa;
     color: #222;
     line-height: 1.6;
-    padding-top: 80px; /* space under navbar */
+    padding-top: 80px;
 }
 
 /* NAVBAR */
-body.om-oss-page .sub-navbar {
+.sub-navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 75px;
-
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 40px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     z-index: 1000;
 }
 
-body.om-oss-page .sub-logo img {
-    height: 33px; 
+.sub-logo img {
+    height: 33px;
     margin-left: 35px;
     width: auto;
     filter: brightness(0);
 }
 
-body.om-oss-page .sub-navbar nav {
+.sub-navbar nav {
     display: flex;
     gap: 32px;
 }
 
-body.om-oss-page .sub-navbar nav a {
+.sub-navbar nav a {
     text-decoration: none;
     color: #333;
     font-size: 0.95rem;
@@ -1737,13 +1742,13 @@ body.om-oss-page .sub-navbar nav a {
     transition: color 0.2s;
 }
 
-body.om-oss-page .sub-navbar nav a:hover,
-body.om-oss-page .sub-navbar nav .active {
+.sub-navbar nav a:hover,
+.sub-navbar nav .active {
     color: #7c6ad9;
 }
 
-/* HERO – Om-oss (om-hero) */
-body.om-oss-page .om-hero {
+/* HERO */
+.hero {
     padding: 100px 20px 60px;
     text-align: center;
     border-radius: 16px;
@@ -1758,7 +1763,7 @@ body.om-oss-page .om-hero {
     overflow: hidden;
 }
 
-body.om-oss-page .om-hero::before {
+.hero::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -1769,29 +1774,30 @@ body.om-oss-page .om-hero::before {
     );
 }
 
-body.om-oss-page .hero-title {
+.hero-title {
     font-size: 2.4rem;
     font-weight: 700;
 }
 
-/* CONTENT SECTIONS */
-body.om-oss-page main {
+/* MAIN */
+main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-body.om-oss-page section {
+/* SECTIONS */
+section {
     margin-bottom: 40px;
 }
 
-body.om-oss-page section h2 {
+section h2 {
     font-size: 1.6rem;
     margin-bottom: 18px;
     position: relative;
 }
 
-body.om-oss-page section h2::after {
+section h2::after {
     content: "";
     position: absolute;
     left: 0;
@@ -1802,18 +1808,18 @@ body.om-oss-page section h2::after {
     background: linear-gradient(90deg, #DCCEF2, #ffffff);
 }
 
-/* Ta bort understrykningen från taglinen */
-body.om-oss-page .tagline::after {
+/* Remove underline from first tagline */
+.tagline::after {
     display: none !important;
 }
 
-body.om-oss-page .tagline {
+.tagline {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 800;
 }
 
-body.om-oss-page .tagline span {
+.tagline span {
     display: block;
     margin-top: 4px;
     font-size: 1rem;
@@ -1821,43 +1827,43 @@ body.om-oss-page .tagline span {
 }
 
 /* LISTS */
-body.om-oss-page .products ul,
-body.om-oss-page .philosophy ul {
+.products ul,
+.philosophy ul {
     list-style: none;
 }
 
-body.om-oss-page .products li,
-body.om-oss-page .philosophy li {
+.products li,
+.philosophy li {
     position: relative;
     padding: 8px 0 8px 20px;
     margin-bottom: 12px;
 }
 
-body.om-oss-page .products li::before,
-body.om-oss-page .philosophy li::before {
+.products li::before,
+.philosophy li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 13px; /* line */
+    top: 13px;
     width: 3px;
-    height: 15px; 
+    height: 15px;
     background: #DCCEF2;
     border-radius: 2px;
 }
 
 /* COMMUNITY HIGHLIGHT */
-body.om-oss-page .community .highlight {
+.community .highlight {
     font-size: 1.3rem;
     font-weight: 800;
-    color: #bca8dd;  
-    text-align: center;    
-    margin: 35px auto 0;  
-    max-width: 600px;    
-    line-height: 1.5;      
+    color: #bca8dd;
+    text-align: center;
+    margin: 35px auto 0;
+    max-width: 600px;
+    line-height: 1.5;
 }
 
 /* FOOTER */
-body.om-oss-page .sub-footer {
+.sub-footer {
     margin-top: 60px;
     padding: 30px 20px;
     text-align: center;
@@ -1867,14 +1873,14 @@ body.om-oss-page .sub-footer {
     font-size: 0.9rem;
 }
 
-body.om-oss-page .sub-footer-links {
+.sub-footer-links {
     margin-top: 10px;
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
-body.om-oss-page .sub-footer-links a {
+.sub-footer-links a {
     color: #7c6ad9;
     text-decoration: none;
     font-weight: 500;
