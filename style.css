@@ -187,13 +187,41 @@ body {
 
 .hero-image {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-image img {
   width: 100%;
-  height: auto;
-  border-radius: 24px;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 50%;
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+  object-fit: cover; /* Ser till att bilden fyller cirkeln utan att töjas */
+  object-position: center;
+}
+
+
+@media (max-width: 992px) {
+  .hero-image img {
+    max-width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image img {
+    max-width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image img {
+    max-width: 250px;
+    height: 250px;
+  }
 }
 
 /* NYHETSARTIKLAR, rule of thirds */
